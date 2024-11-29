@@ -8,6 +8,10 @@ app.use(express.json());
 app.use(cors());
 
 
+app.use("/api/auth", require("./routes/authRoutes")); // Routes pour l'authentification
+app.use("/api/ideas", require("./routes/ideaRoutes")); // Routes pour les idées
+app.use("/api/users", require("./routes/userRoutes")); // Routes pour les utilisateurs
+
 
 
 
