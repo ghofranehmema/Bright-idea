@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* about Section */
+
+.about {
+  display: flex; /* Aligne le texte et l'image horizontalement */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: flex-start; /* Place les éléments vers la gauche */
+  padding: 200px;
+  margin-top: 1000px;
+  background-color: #dff1eb; /* Arrière-plan similaire à votre conception */
+}
+
+.about-section {
+  max-width: 600px;
+  color: rgb(11, 94, 85);
+  text-align: left; /* Le texte sera aligné à gauche */
+  margin-left: 20px; /* Espace entre le texte et l'image */
+  flex: 1;
+}
+
+.about h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.about-image img {
+  display: block; /* Assure que l'image est visible */
+  max-width: 250px; /* Limite la taille de l'image */
+  height: auto; /* Garde les proportions */
+  margin-left: 20px; /* Espace à gauche de l'image */
+  border: 2px solid #ccc; /* Bordure pour voir l'image si elle est invisible */
+  background-color: #f0f0f0; /* Fond de secours si l'image est absente */
+}
+
+/* Mission & Vision Section */
+.mission {
+  background-color: #82b4a4;
+  padding: 60px 20px;
+  text-align: center;
+}
+.vision {
+  background-color: #82b4a4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.mission-vision {
+  background-color: #dff1eb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+
+/* Values Section */
+.values {
+  background-color: #dff1eb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.value {
+  width: 30%;
+  background-color: #82b4a4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value h3 {
+  font-size: 22px;
+  color: #2c504a;
+}
+
+.value p {
+  font-size: 16px;
+}
+
+
+
+/* Call to Action Section */
+.call{
+  background-color: #dff1eb;
+  color: #2c504a;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.call h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.call p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.call-btn {
+  background-color: #238073;
+  color: rgb(10, 56, 46);
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.call-btn:hover {
+  background-color: #e3f3f2;
+  transition: background-color 0.3s;
+}

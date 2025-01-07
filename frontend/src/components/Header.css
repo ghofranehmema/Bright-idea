@@ -1,0 +1,130 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style pour le header */
+  .header {
+    background-color: #B3DDCD;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  header img.logo {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+   header h1 {
+    font-size: 1.5em;
+    color: #2a2a2a;
+    margin: 0;
+  }
+  /* Style pour la navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Contrôle des marges */
+    background-color: #B3DDCD; /* Exemple de couleur de fond */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+
+  }
+  
+
+  .logo-text{
+    font-size: 30px;
+    font-weight: bold;
+    color: #008161;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  
+  .nav-links li {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #086951;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+  }
+  
+  /* Style pour les boutons de connexion et d'inscription */
+  .auth-buttons a {
+    margin: 0 10px;
+  }
+  .login-btn, .signup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn {
+    background-color: #286959;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .signup-btn {
+    background-color: #286959;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .login-btn:hover {
+    background-color: white;
+    color: #2c3e50;
+  }
+  
+  .signup-btn:hover {
+    background-color: white;
+    color:#2c3e50 ;
+  }
+  
+  /* Responsivité */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .auth-buttons {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  }
+  
+  
+  
+  

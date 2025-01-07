@@ -1,0 +1,145 @@
+/* Container principal */
+.idea-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e4f0ed;
+  min-height: 100vh;
+}
+
+/* Conteneur des idées */
+.ideas-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  background-color: #B3DDCD;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+/* Conteneur de la saisie */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Zone de texte pour poster une idée */
+textarea.idea-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c2eaf0;
+  resize: none;
+  font-size: 14px;
+}
+
+/* Bouton Idea */
+.idea-button {
+  align-self: flex-start;
+  background-color: #6D9B90;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.idea-button:hover {
+  background-color: #5B8E7D;
+}
+
+/* Liste des idées */
+.ideas-list {
+  margin-top: 20px;
+}
+
+/* Chaque idée */
+.idea-post {
+  background-color: #B3DDCD;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #374e52;
+}
+
+/* Like and Dislike Buttons */
+.like-dislike-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  
+}
+
+.like-btn,
+.dislike-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.like-dislike-btn {
+  background-color: #4caf50; 
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 1px 3px;
+}
+
+.like-dislike-btn {
+  background-color: #0b6f5d; 
+  color: white;
+  border-radius: 5px;
+}
+
+.likes-count {
+  font-size: 14px;
+  color: #555;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Boutons d'édition et de suppression */
+.edit-btn, .save-btn, .delete-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #387e63;
+  color: white;
+}
+
+.save-btn {
+  background-color: #387e63;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #c0392b;
+  color: white;
+}
+
+.edit-btn:hover,
+.save-btn:hover,
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+
+
