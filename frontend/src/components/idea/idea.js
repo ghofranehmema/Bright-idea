@@ -49,7 +49,7 @@ const Idea = () => {
       idea: newIdea,
       likes: 0,
       isFixed: false,
-      liked: false, 
+      liked: false,   
     };
 
     fetch('http://localhost:5000/api/ideas', {
