@@ -11,7 +11,9 @@ const Idea = () => {
       user: 'Dali',
       likes: 5,
       isFixed: true,
-      liked: false, 
+      liked: false,
+      comment: '', // Nouveau champ pour les commentaires
+      showComment: false, // Nouveau champ pour gérer l'affichage du commentaire
     },
     {
       _id: 2,
@@ -20,6 +22,8 @@ const Idea = () => {
       likes: 2,
       isFixed: true,
       liked: false,
+      comment: '', // Nouveau champ pour les commentaires
+      showComment: false, // Nouveau champ pour gérer l'affichage du commentaire
     },
     {
       _id: 3,
@@ -28,6 +32,8 @@ const Idea = () => {
       likes: 1,
       isFixed: true,
       liked: false,
+      comment: '', // Nouveau champ pour les commentaires
+      showComment: false, // Nouveau champ pour gérer l'affichage du commentaire
     },
   ]);
 
@@ -49,7 +55,9 @@ const Idea = () => {
       idea: newIdea,
       likes: 0,
       isFixed: false,
-      liked: false,   
+      liked: false,
+      comment: '', // Nouveau champ pour les nouvelles idées
+      showComment: false, // Nouveau champ pour gérer l'affichage du commentaire
     };
 
     fetch('http://localhost:5000/api/ideas', {
@@ -114,6 +122,22 @@ const Idea = () => {
     );
   };
 
+  const handleCommentChange = (_id, value) => {
+    setIdeas(
+      ideas.map((idea) =>
+        idea._id === _id ? { ...idea, comment: value } : idea
+      )
+    );
+  };
+
+  const handleShowComment = (_id) => {
+    setIdeas(
+      ideas.map((idea) =>
+        idea._id === _id ? { ...idea, showComment: !idea.showComment } : idea
+      )
+    );
+  };
+
   return (
     <div className="idea-container">
       <div className="ideas-container">
@@ -170,6 +194,27 @@ const Idea = () => {
                   </Link>
                 </div>
               )}
+
+              {/* Nouveau conteneur pour le commentaire */}
+              <div className="comment-container">
+                <input
+                  type="text"
+                  className="comment-input"
+                  placeholder="Add a comment..."
+                  value={idea.comment}
+                  onChange={(e) => handleCommentChange(idea._id, e.target.value)}
+                />
+                <button className="comment-btn" onClick={() => handleShowComment(idea._id)}>
+                  Comment
+                </button>
+
+                {/* Affichage du commentaire après clic */}
+                {idea.showComment && idea.comment && (
+                  <div className="comment-display">
+                    <p>{idea.comment}</p>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>

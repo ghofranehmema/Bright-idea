@@ -1,3 +1,4 @@
+
 /* Container principal */
 .idea-container {
   display: flex;
@@ -67,6 +68,42 @@ textarea.idea-input {
   border-radius: 8px;
   margin-bottom: 10px;
   border: 1px solid #374e52;
+  position: relative; /* Pour positionner les éléments à droite */
+}
+
+/* Conteneur pour les commentaires */
+.comment-container {
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Champ de saisie des commentaires */
+.comment-input {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #c2eaf0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Bouton pour ajouter un commentaire */
+.comment-btn {
+  background-color: #387e63;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.comment-btn:hover {
+  background-color: #2e6650;
 }
 
 /* Like and Dislike Buttons */
@@ -75,7 +112,6 @@ textarea.idea-input {
   align-items: center;
   gap: 10px;
   margin-top: 10px;
-  
 }
 
 .like-btn,
@@ -89,7 +125,7 @@ textarea.idea-input {
 }
 
 .like-dislike-btn {
-  background-color: #4caf50; 
+  background-color: #4caf50;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -98,7 +134,7 @@ textarea.idea-input {
 }
 
 .like-dislike-btn {
-  background-color: #0b6f5d; 
+  background-color: #0b6f5d;
   color: white;
   border-radius: 5px;
 }
@@ -111,7 +147,9 @@ textarea.idea-input {
 }
 
 /* Boutons d'édition et de suppression */
-.edit-btn, .save-btn, .delete-btn {
+.edit-btn,
+.save-btn,
+.delete-btn {
   padding: 5px 10px;
   margin-top: 10px;
   margin-right: 10px;
@@ -141,5 +179,8 @@ textarea.idea-input {
   opacity: 0.8;
 }
 
-
+/* Lien pour profil utilisateur */
+.fix {
+  color: #0a533d;
+}
 
